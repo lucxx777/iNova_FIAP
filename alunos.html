@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="alunos.css">
+    <title>iNova| Área do aluno</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="particles"></div>
+        <div class="info-text">
+            <h1>Seja bem-vindo!</h1>
+            <h3>Área do aluno</h3>
+            <a href="#about" class="scroll"><i class='bx bxs-down-arrow'></i></a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="header">
+            <h2>Progresso dos cursos:</h2>
+            <a href="index.html">Home</a>
+        </div>
+
+        <div class="card">
+            <div class="progress-circle">
+                <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring__circle" stroke="grey" stroke-width="4" fill="transparent" r="54"
+                        cx="60" cy="60"></circle>
+                </svg>
+                <div class="percentage">
+                    0%
+                </div>
+            </div>
+
+            <div class="info">
+                <h1 class="ncurso">Full-Stack</h1>
+
+                <div class="header">
+                    <a href="f0.html" id="button-curso">Ver todas as aulas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx bxs-up-arrow'></i>
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="aluno.js"></script>
+    <script src="alunos.js"></script>
+</body>
+
+</html>

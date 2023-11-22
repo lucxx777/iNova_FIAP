@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-color: #00aeff;
+    background-image: radial-gradient(at 88% 0%,
+      rgb(0, 68, 255) 0px,
+      transparent 50%),
+    radial-gradient(at 63% 46%, rgb(80, 188, 231) 0px, transparent 50%),
+    radial-gradient(at 95% 53%, rgb(94, 166, 247) 0px, transparent 50%),
+    radial-gradient(at 79% 83%, rgb(0, 89, 124) 0px, transparent 50%),
+    radial-gradient(at 74% 93%, rgb(2, 62, 141) 0px, transparent 50%),
+    radial-gradient(at 52% 13%, rgb(18, 63, 158) 0px, transparent 50%),
+    radial-gradient(at 30% 80%, rgb(4, 47, 95) 0px, transparent 50%);
+    color: #000;
+    font-family: 'Ubuntu';
+}
+
+.login{
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 90%;
+    padding: 70px 30px 44px;
+    border-radius: 1.25rem;
+    background: #fff;
+    text-align: center;
+}
+
+.login > img{
+    width: 120px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.login > h2{
+    font-size: 36px;
+    margin: 0 0 25px;
+}
+
+.login > h3{
+    color: rgba(0, 0, 0, 0.38);
+    margin: 0 0 6px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.login-form{
+    display: grid;
+    gap: 30px;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.login-form > input, .login-form > button{
+    height: 56px;
+    outline: none;
+    padding: 0;
+    font-family: inherit;
+}
+
+.login-form > input{
+    width: 240px;
+    background: transparent;
+    border: 2px solid transparent;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    padding: 0;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.login-form > input:hover{
+    border-bottom: 2px solid #303f9f;
+}
+
+.login-form > input:focus{
+    border-bottom: 2px solid #1976d2;
+}
+
+.login-form > button{
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    background: #303f9f;
+    color: #f9f9f9;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.login-form > button:hover{
+    background-color: #1976d2;
+}
+
+.login-form > a{
+    color: #303f9f;
+    font-size: 1rem;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.login-form > a:hover{
+    color: #1976d2;
+}
+
+#link-entrar {
+    text-decoration: none;
+    color: white;
+}
+
+.custom-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+@media (width >= 450px){
+    .login{
+        width: 380px;
+    }
+}
+
+@media (width >= 500px){
+    body{
+        padding: 0;
+    }
+}
+
+@media (width >= 1200px){
+    .login{
+        width: 25%;
+    }
+}
+

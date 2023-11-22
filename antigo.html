@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="antigo.css">
+    <title>Login</title>
+</head>
+<body>
+    
+    <div class="login-card">
+        <h2>Matricule-se</h2>
+        <h3>Seus dados:</h3>
+
+        <form class="login-form">
+            <input type="text" placeholder="Nome">
+            <input type="password" placeholder="Senha">
+            <label>Escolha um ou mais cursos:</label>
+            <br>
+            <br>
+            <div id="courses">
+                <input type="checkbox" id="programacao" name="courses" value="programacao">
+                <label for="programacao">Programação</label>
+                <br>
+                <input type="checkbox" id="front-end" name="courses" value="front-end">
+                <label for="front-end">Full-Stack</label>
+                <br>
+                <input type="checkbox" id="design" name="courses" value="design">
+                <label for="design">Design</label>
+             
+            </div>
+            <button type="submit"><a class="mudar" href="alunos.html">Matricular</a></button>
+        </form>
+    </div>
+    <script type="text/javascript" src="antigo.js"></script>
+</body>
+</html>
